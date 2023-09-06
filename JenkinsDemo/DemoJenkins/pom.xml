@@ -2,18 +2,17 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>JenkinsDemo</groupId>
-  <artifactId>JenkinsDemo</artifactId>
+  <groupId>DemoJenkins</groupId>
+  <artifactId>DemoJenkins</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>JenkinsDemo</name>
+  <name>DemoJenkins</name>
   <url>http://maven.apache.org</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
-
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -28,37 +27,62 @@
     <version>7.8.0</version>
     <scope>test</scope>
 </dependency>
-    <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
     <version>4.12.0</version>
 </dependency>
   </dependencies>
-  <build>
-	  <pluginManagement>
+<build>
+
+    <pluginManagement>
+
     <plugins>
-        <plugin>
-      <groupId>org.apache.maven.plugins</groupId>
+
+       <plugin>
+
+        <groupId>org.apache.maven.plugins</groupId>
+
         <artifactId>maven-compiler-plugin</artifactId>
-       <version>2.3.2</version>
-        <configuration>
+
+        <version>2.3.2</version>
+
+       <configuration>
+
             <source>1.7</source>
+
             <target>1.7</target>
+
         </configuration>
+
         </plugin>
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
+
+       <plugin>
+
+           <groupId>org.apache.maven.plugins</groupId>
+
             <artifactId>maven-surefire-plugin</artifactId>
+
             <version>2.12</version>
+
             <inherited>true</inherited>
+
             <configuration>
-                <suiteXmlFiles>
+
+              <suiteXmlFiles>
+
                     <suiteXmlFile>testng.xml</suiteXmlFile>
+
                 </suiteXmlFiles>
-            </configuration>
-        </plugin>
-    </plugins>
-    </pluginManagement>
+
+             </configuration>
+
+         </plugin>
+
+     </plugins>
+
+     </pluginManagement>
+
     </build>
 </project>

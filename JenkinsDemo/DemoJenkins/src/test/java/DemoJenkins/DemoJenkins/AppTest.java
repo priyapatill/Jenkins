@@ -1,4 +1,4 @@
-package JenkinsDemo.JenkinsDemo;
+package DemoJenkins.DemoJenkins;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
