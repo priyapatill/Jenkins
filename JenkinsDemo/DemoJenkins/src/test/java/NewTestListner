@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="Suite">
+<listeners>
+	<listener class-name="DemoJenkins.DemoJenkins.ListnerDay3">
+	</listener>
+</listeners>
+
+  <test name="Test">
+    <classes>
+      <class name="DemoJenkins.DemoJenkins.NewTestListner"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
