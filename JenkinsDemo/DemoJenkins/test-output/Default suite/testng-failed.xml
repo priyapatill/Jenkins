@@ -3,14 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="DemoJenkins.DemoJenkins.Orangehrm">
+      <class name="DemoJenkins.DemoJenkins.extr">
         <methods>
-          <include name="testLoginPageIsLoaded"/>
+          <include name="t3"/>
+          <include name="getResult"/>
           <include name="tearDown"/>
-          <include name="testLogoutIsWorkingFine"/>
-          <include name="setUp"/>
+          <include name="t2"/>
+          <include name="startReport"/>
         </methods>
-      </class> <!-- DemoJenkins.DemoJenkins.Orangehrm -->
+      </class> <!-- DemoJenkins.DemoJenkins.extr -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
