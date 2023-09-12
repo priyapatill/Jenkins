@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="DemoJenkins.DemoJenkins.Logs1">
+      <class name="DemoJenkins.DemoJenkins.DemoBlazeLog">
         <methods>
-          <include name="f"/>
           <include name="beforetest"/>
+          <include name="f"/>
         </methods>
-      </class> <!-- DemoJenkins.DemoJenkins.Logs1 -->
+      </class> <!-- DemoJenkins.DemoJenkins.DemoBlazeLog -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
