@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 
 public class Logs1 {
 	WebDriver driver;
-	Logger logger;
+	org.apache.logging.log4j.Logger logger;
 	@BeforeTest
 	public void beforetest() {
 		driver=new ChromeDriver();
